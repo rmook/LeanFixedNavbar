@@ -1,0 +1,90 @@
+/**** Nifty Fixed Navbar by Rick Mook ****/
+/**** This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/. ****/
+/**** Feel free to copy, use, and modify with attribution ****/
+/**** Mobile Navbar Styling ****/
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  width: 100%; }
+  nav ul {
+    display: none;
+    height: auto;
+    background: #ccc;
+    margin-top: 50px;
+    opacity: 0.8;
+    padding-right: 20px;
+    z-index: 9000; }
+    nav ul li {
+      padding-bottom: 20px;
+      padding-top: 20px;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: bold;
+      list-style: none; }
+      nav ul li a {
+        padding: 5px;
+        text-decoration: none; }
+      nav ul li a:hover, nav ul li a:active {
+        background-color: #ddd; }
+
+#pull {
+  display: block;
+  background-color: #ccc;
+  width: 100%;
+  position: relative; }
+
+#pull:after {
+  content: "";
+  background: url("navicon.png") no-repeat;
+  width: 35px;
+  height: 50px;
+  display: inline-block;
+  position: absolute;
+  right: 15px;
+  top: 10px; }
+
+/**** BREAKPOINT HERE *****/
+@media only screen and (min-width: 768px) {
+  /**** Desktop Navbar Styling ****/
+  nav {
+    height: 50px;
+    width: 100%;
+    font-size: 1em;
+    font-weight: bold; }
+    nav ul {
+      display: inline;
+      float: right;
+      padding: 0;
+      opacity: 1;
+      margin: 0 auto;
+      height: 50px; }
+      nav ul li {
+        padding-top: 10px;
+        display: inline;
+        padding-bottom: 0px; }
+        nav ul li a {
+          color: #222;
+          display: inline-block;
+          padding: 0;
+          width: 100px;
+          text-align: center;
+          line-height: 50px;
+          border-left: 1px solid #aaa;
+          box-sizing: border-box; }
+
+  #pull {
+    display: none; } }
+/** clearfix **/
+.clearfix:before,
+.clearfix:after {
+  content: "  ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+
+/*# sourceMappingURL=styles.css.map */
