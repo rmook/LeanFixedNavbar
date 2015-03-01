@@ -24,7 +24,7 @@ nav {
     background: #ccc;
     opacity: 0.8;
     padding: 0;
-    margin: 0;
+    margin-top: 16px;
     z-index: 9000; }
     nav ul li {
       padding-bottom: 20px;
@@ -36,6 +36,10 @@ nav {
         padding: 5px; }
       nav ul li a:hover, nav ul li a:active {
         background-color: #ddd; }
+
+.logo {
+  display: inline-block;
+  margin-top: 16px; }
 
 #pull {
   display: block;
